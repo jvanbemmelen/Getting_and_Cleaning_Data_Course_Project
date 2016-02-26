@@ -8,7 +8,7 @@ The source dataset represents data collected from the accelerometers from the Sa
 ##Transformations
 
 The provided run_analysis.R script performs various clean up actions that result in the final dataset. These steps are performed:
-- the source dataset is downloaded and unzipped in the cwd.
+- lines 7 and 9 are commented but allow you to download and upzip the source data in the cwd.
 - training, test, subject, activity and features files are loaded.
 - the names of the activities in the activity table are converted to lowercase and underscores are removed to improve readability.
 - the feature names are added as headers to the test and training data.

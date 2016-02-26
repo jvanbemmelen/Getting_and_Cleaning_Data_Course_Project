@@ -4,9 +4,9 @@ library(dplyr)
 options(dplyr.print_max = 200, dplyr.width = Inf)
 
 # download datasets
-download.file(url="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", destfile="getdata-projectfiles-UCI HAR Dataset.zip", method='curl')
+#download.file(url="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", destfile="getdata-projectfiles-UCI HAR Dataset.zip", method='curl')
 # unzip the zip file
-unzip("getdata-projectfiles-UCI HAR Dataset.zip")
+#unzip("getdata-projectfiles-UCI HAR Dataset.zip")
 
 # load all datasets, activities, subjects and features
 testDataSet <- read.table(file="UCI HAR Dataset/test/X_test.txt")
