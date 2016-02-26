@@ -1,11 +1,11 @@
-*Data
+##Data
 
 The dataset in this repo is created for the assignment of the Getting and Cleaning Data Course Project of the Getting and Cleaning Data course on Coursera.org. The dataset should agree to the tidy data rules that are taught in this course and that are described in the Tidy Data paper by Hadly Wickham that is available here: http://vita.had.co.nz/papers/tidy-data.pdf.
 
 The source dataset represents data collected from the accelerometers from the Samsung Galaxy S smartphone. It is available and described here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 
 
-*Transformations
+##Transformations
 
 The provided run_analysis.R script performs various clean up actions that result in the final dataset. These steps are performed:
 - the source dataset is downloaded and unzipped in the cwd.
@@ -27,7 +27,7 @@ The provided run_analysis.R script performs various clean up actions that result
 - the final dataset is stored in a file called "avgActivitySubject.R" in the current working directory.
 
 
-*Variables
+##Variables
 
 |Variable Name|Explanation|
 |-------------|-----------|
