@@ -46,7 +46,7 @@ colnames(trainDataSet)[1] <- "subject"
 completeDataSet <- rbind(testDataSet,trainDataSet)
 
 # get columns that have mean() or std() in their names. keep the activity and subject
-getMeanAndDev <- grep('mean()|std()|^activity$|^subject$', names(completeDataSet))
+getMeanAndDev <- grep('mean\\(\\)|std\\(\\)|^activity$|^subject$', names(completeDataSet))
 # create new data frame with requested columns
 meanAndStd <- completeDataSet[getMeanAndDev]
 
@@ -70,4 +70,3 @@ meanAndStd %>% group_by(activity,subject) %>% summarise_each(funs(mean)) -> avgA
 # save the resulting dataset to a file
 save(avgActivitySubject, file="avgActivitySubject.R")
 print("the new dataset is now available as avgActivitySubject in your current workspace, or as file named avgActivitySubject.R in your cwd")
-
