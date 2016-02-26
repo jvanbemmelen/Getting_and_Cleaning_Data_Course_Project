@@ -68,5 +68,5 @@ names(meanAndStd) <- gsub("([XYZ]$)",'\\L\\1',names(meanAndStd),perl=TRUE)
 # get the mean and std dev of all features grouped by activity and subject
 meanAndStd %>% group_by(activity,subject) %>% summarise_each(funs(mean)) -> avgActivitySubject
 # save the resulting dataset to a file
-save(avgActivitySubject, file="avgActivitySubject.R")
+write.table(avgActivitySubject,file="avgActivitySubject.R",row.name=FALSE)
 print("the new dataset is now available as avgActivitySubject in your current workspace, or as file named avgActivitySubject.R in your cwd")
